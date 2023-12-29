@@ -13,22 +13,17 @@
             E a senha "Carlos@123!"
             Então devo ser direcionado para a tela de checkout
 
-            Cenário: Autenticação inválida
+            Cenário: Autenticação de e-mail inválido
             Quando eu digitar o usuário "carlosjadki@shopebac.com"
             E a senha "Carlos@123!"
             Então deve exibir a mensagem de alerta "Usuário ou senha inválidos"
 
-            Cenário: Autenticação inválida
+            Cenário: Autenticação de senha inválida
             Quando eu digitar o usuário "carlos@shopebac.com"
             E a senha "Carloskajsnd23!"
             Então deve exibir a mensagem de alerta "Usuário ou senha inválidos"
 
-            Cenário: Autenticação inválida
-            Quando eu digitar o usuário "carlasdaos@shopebac.com"
-            E a senha "Carloskajsnd23!"
-            Então deve exibir a mensagem de alerta "Usuário ou senha inválidos"
-
-            Cenário: Autenticar multiplos usuários
+            Cenário: Autenticar multiplos usuários e senhas
             Quando eu digitar o <usuario>
             E a <senha>
             Então devo ser direcionado para a tela de checkout
